@@ -1,0 +1,52 @@
+# 隔离环境和本机工具
+.venv/
+venv/
+env/
+.uv-cache/
+.vscode/
+
+# Python 缓存和构建临时文件
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# 系统和编辑器临时文件
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 本机凭据和私钥（示例配置可保留，但仍须检查内容）
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+.git-credentials
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# 数据默认不提交，保留目录说明
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+
+# 所有生成输出可通过脚本重建
+outputs/*
+!outputs/README.md
